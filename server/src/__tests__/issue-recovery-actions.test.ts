@@ -2727,7 +2727,7 @@ describeEmbeddedPostgres("issue recovery actions", () => {
       .send({
         actionId: action.id,
         outcome: "restored",
-        sourceIssueStatus: "in_review",
+        sourceIssueStatus: "todo",
         resolutionNote: "Creator self-healing an unassigned board-owned action.",
       })
       .expect(200);
